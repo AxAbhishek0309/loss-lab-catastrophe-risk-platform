@@ -1,9 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "pnpm run build"
   publish = "out"
 
 [build.environment]
   NODE_VERSION = "20"
+  PNPM_FLAGS = "--no-frozen-lockfile"
 
 # Optional backend proxy (if hosted on Render/Railway)
 [[redirects]]
