@@ -1,24 +1,24 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: 'LossLab | Catastrophe Risk Intelligence',
   description: 'Model catastrophe frequency, severity, exposure and tail losses before they happen.',
-  generator: 'v0.app',
+  applicationName: 'LossLab Catastrophe Risk Platform',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
+        url: '/favicon.ico',
+        sizes: 'any',
       },
       {
         url: '/icon.svg',
         type: 'image/svg+xml',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        sizes: '32x32',
+        type: 'image/png',
       },
     ],
     apple: '/apple-icon.png',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   colorScheme: 'light dark',
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: '(prefers-color-scheme: light)', color: '#091b2e' },
+    { media: '(prefers-color-scheme: dark)', color: '#051224' },
   ],
 }
 
@@ -42,7 +42,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )

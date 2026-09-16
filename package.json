@@ -1,6 +1,7 @@
 {
-  "name": "my-project",
-  "version": "0.1.0",
+  "name": "loss-lab-catastrophe-risk-platform",
+  "version": "1.0.0",
+  "description": "Full-stack Catastrophe Risk Analytics & Actuarial Platform",
   "private": true,
   "packageManager": "pnpm@12.3.4",
   "scripts": {
@@ -10,7 +11,6 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
-    "@vercel/analytics": "1.6.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.16.0",
