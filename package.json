@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Full-stack Catastrophe Risk Analytics & Actuarial Platform",
   "private": true,
-  "packageManager": "pnpm@12.3.4",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
