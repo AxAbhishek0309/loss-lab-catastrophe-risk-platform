@@ -1,0 +1,5 @@
+'use client'
+import { FormEvent } from 'react'
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
+export default function Login(){function submit(e:FormEvent){e.preventDefault();window.location.href='/app'}return <main className="login-page"><section className="login-visual"><Link href="/" className="brand"><span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>LossLab</Link><div><h1>Quantifying uncertainty before it becomes loss.</h1><p>Model frequency, severity, exposure and tail losses with confidence.</p></div></section><section className="login-form"><div><span className="eyebrow">WELCOME BACK</span><h1>Sign in to LossLab</h1><p>Access your risk intelligence workspace.</p><form onSubmit={submit}><label>Email<input type="email" defaultValue="analyst@losslab.com" required /></label><label>Password<input type="password" defaultValue="demo-password" required /></label><button className="primary-action" type="submit">Continue to platform <ArrowRight /></button></form><small>Demo access is enabled for this prototype.</small></div></section></main>}
